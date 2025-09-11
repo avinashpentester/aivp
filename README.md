@@ -1,4 +1,4 @@
-# AIVP  [AI Vulnerabilities Playground] — Phase 1: Prompt Injection Labs
+# AIVP  [AI Vulnerabilities Playground] — Phase 1: The LLM Labs
 
 At this point these labs handles 10 labs those were designed as part of Phase-1, the road map for these labs is divided into 4 phases covering 40 unique scenarios. The remaining labs were in testing phase, I will share them in phases. These are hands‑on labs to practice AI application security with **Ollama + Llama3**, a **FastAPI** backend, and a **React/Vite** frontend.
 
@@ -28,7 +28,7 @@ At this point these labs handles 10 labs those were designed as part of Phase-1,
 
 ## Overview
 
-Phase 1 focuses on **Prompt Injection** patterns. Each lab has a **dynamic secret** that is injected into the model’s system prompt and validated via the API. Your goal is to coax the model into leaking that secret (within the safe, sandboxed context of these exercises), then submit it to the validator.
+Phase 1 focuses on **LLM based attack** patterns. Each lab has a **dynamic secret** that is injected into the model’s system prompt and validated via the API. Your goal is to coax the model into leaking that secret (within the safe, sandboxed context of these exercises), then submit it to the validator.
 
 - **Model**: Llama3 via **Ollama** (local)
 - **Backend**: FastAPI (SSE streaming) — `POST /api/labs/{lab}/chat`
