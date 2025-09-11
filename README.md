@@ -1,4 +1,4 @@
-# AIVP — Phase 1: Prompt Injection Labs
+# AIVP  [AI Vulnerabilities Playground] — Phase 1: Prompt Injection Labs
 
 At this point these labs handles 10 labs those were designed as part of Phase-1, the road map for these labs is divided into 4 phases covering 40 unique scenarios. The remaining labs were in testing phase, I will share them in phases. These are hands‑on labs to practice AI application security with **Ollama + Llama3**, a **FastAPI** backend, and a **React/Vite** frontend.
 
