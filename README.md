@@ -30,6 +30,8 @@ At this point these labs handles 10 labs those were designed as part of Phase-1,
 
 Phase 1 focuses on **LLM based attack** patterns. Each lab has a **dynamic secret** that is injected into the model’s system prompt and validated via the API. Your goal is to coax the model into leaking that secret (within the safe, sandboxed context of these exercises), then submit it to the validator.
 
+**Educational Use Only** — The labs simulate offensive and defensive AI security scenarios on local systems. Do **not** target real services, data, or infrastructure you do not own or have explicit permission to test. Secrets in these labs are synthetic and regenerated per‑lab; they are **not** production credentials. Use at your own risk. No warranty is provided.
+
 - **Model**: Llama3 via **Ollama** (local)
 - **Backend**: FastAPI (SSE streaming) — `POST /api/labs/{lab}/chat`
 - **Frontend**: React + Vite (Tailwind UI)
