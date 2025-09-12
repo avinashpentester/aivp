@@ -1,0 +1,22 @@
+name: Feature request
+description: Propose an enhancement or new lab
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use‑case
+      description: What’s the pain point?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change? Any alternatives?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra context / screenshots
