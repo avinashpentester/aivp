@@ -223,8 +223,6 @@ Add your screenshots under `docs/screenshots/` and reference them here:
 ![PI‑01 Running](docs/screenshots/pi01.png)
 ```
 
-> Tip: In Vite, you can also place images in `public/` and link them as `/your-file.png`.
-
 ---
 
 ## Troubleshooting
