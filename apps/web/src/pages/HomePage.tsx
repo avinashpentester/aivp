@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <div className="container mx-auto px-6 py-12 max-w-6xl">
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+        <h1 className="text-5xl leading-tight pb-1 font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent overflow-visible">
           AI Vulnerabilities Playground
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
