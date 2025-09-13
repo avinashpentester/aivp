@@ -11,6 +11,7 @@ At this point these labs handles 10 labs those were designed as part of Phase-1,
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
+- [Hardware Requirements](#hardware-requirements)
 - [Setup & Installation](#setup--installation)
   - [Quick Start (Windows PowerShell)](#quick-start-windows-powershell)
   - [Quick Start (macOS/Linux bash)](#quick-start-macoslinux-bash)
@@ -62,6 +63,45 @@ apps/
     src/
     .env.example
 ```
+## Hardware Requirements
+
+- **Minimum (CPU-only):** 4 cores, **16 GB RAM**, **10 GB free disk**, no GPU → works, slower generations  
+- **Recommended:** 8 cores, **32 GB RAM**, **SSD 20+ GB free**, **NVIDIA 8–12 GB VRAM** (or Apple Silicon) → snappy UX
+
+### CPU
+- 64-bit CPU with **AVX2** (modern Intel/AMD) or **Apple Silicon (M1/M2/M3)**.
+- **4 cores** minimum; **8+ cores** recommended for parallel chat + dev tools.
+
+### RAM (Llama 3 8B via Ollama, quantized)
+- **Q4_K_M (~4–5 GB model):** needs ~**6–8 GB** at runtime.
+- **Q5/Q6 (~6–8 GB):** ~**10–12 GB** runtime.
+- **Q8 (~9–10 GB):** ~**14–16 GB** runtime.
+
+> **Tip:** 16 GB system RAM works; 32 GB gives comfortable headroom for browser, Node, Python, and IDE.
+
+### GPU (optional)
+- **Windows/Linux (CUDA):** NVIDIA RTX with **≥8 GB VRAM** (e.g., 3060 12 GB is great).
+- **macOS (Metal):** Any **Apple Silicon**.
+- CPU-only is fine; responses will just be slower.
+
+### Disk
+- **Models:** 5–10 GB depending on quant.  
+- **Repo + node_modules + venv:** 1–2 GB.  
+- Plan **15–20 GB free**.
+
+### OS
+- **Windows 10/11**, **macOS 12+**, **Ubuntu 20.04+** (or similar). WSL2 also works (GPU needs extra setup).
+
+### Dev Tooling
+- **Python 3.10+**, **Node 18+** (20 LTS ideal), **Ollama** installed and running.
+
+### Performance Tips
+- Start with **llama3 (8B) Q4**; increase quant only if you have spare RAM/VRAM.
+- Keep prompts/context reasonable (2–4k tokens) to avoid memory spikes.
+- Close heavy apps if you’re on **16 GB** RAM.
+
+
+
 
 ---
 
